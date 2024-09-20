@@ -21,8 +21,10 @@ package org.knit.lab1;
 public class Task1 {
 
     public void execute() {
-        /*
-         * Ваше решение
-         */
+        for (int i = 0; i <= 90; i += 10) {
+            for (int j = 1; j <= 10; j ++)
+                System.out.print((i + j) + (j != 10 ? "," : ""));
+            System.out.println();
+        }
     }
 }
