@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98182fc1-eddb-4df4-8d63-c71d42a37759" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab1/Task1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab1/Task1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab1/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab1/Task2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab2/Task4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +29,7 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "tasks/task4",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/artemiymirotvortsev/IdeaProjects/knit241_template-master",
     "settings.editor.selected.configurable": "configurable.group.appearance"
