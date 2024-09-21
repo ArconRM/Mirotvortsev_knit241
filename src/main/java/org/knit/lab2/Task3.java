@@ -29,6 +29,10 @@ public class Task3 {
         }
     }
 
+    public class DivisionByZeroException extends Exception {
+        public DivisionByZeroException() { super(); }
+    }
+
     class Calculator {
         public static final String availableOperations = "+-*/";
 
@@ -44,9 +48,9 @@ public class Task3 {
             return a * b;
         }
 
-        public double divide(double a, double b) {
+        public double divide(double a, double b) throws DivisionByZeroException {
             if (b == 0) {
-                throw new IllegalArgumentException();
+                throw new DivisionByZeroException();
             }
             return a / b;
         }
@@ -91,6 +95,9 @@ public class Task3 {
                         System.out.println(calculator.subtract(a, b));
                         break;
                 }
+            }
+            catch (DivisionByZeroException e) {
+                System.out.println("Делить на ноль нельзя");
             }
             catch (Exception e) {
                 System.out.println("Некорректный ввод");
