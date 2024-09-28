@@ -1,13 +1,12 @@
 package org.knit;
 
-//import org.knit.lab1.Task1;
-//import org.knit.lab1.Task2;
-
-import org.knit.lab2.Task4;
+import org.knit.lab1.Task1;
+import org.knit.lab1.Task2;
+import org.knit.lab2.Task5;
 
 public class Main {
     public static void main(String[] args) {
-        Task4 task4 = new Task4();
-        task4.execute();
+        Task5 task5 = new Task5();
+        task5.execute();
     }
 }
