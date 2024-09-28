@@ -4,8 +4,6 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="98182fc1-eddb-4df4-8d63-c71d42a37759" name="Changes" comment="Completed task 3">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab2/Task3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab2/Task3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +39,6 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "tasks/task3",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/artemiymirotvortsev/IdeaProjects/knit241_template-master",
     "settings.editor.selected.configurable": "configurable.group.appearance"
