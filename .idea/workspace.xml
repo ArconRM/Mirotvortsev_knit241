@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e6db69c-dfbd-48b0-b034-382513556b3d" name="Changes" comment="Completed lab 3 (only task 6)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/assets/dictionary.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab4/DictionaryStatistic.java" afterDir="false" />
+    <list default="true" id="1e6db69c-dfbd-48b0-b034-382513556b3d" name="Changes" comment="Completed lab 4 (task 7)">
       <change afterPath="$PROJECT_DIR$/target/classes/org/knit/Main.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/org/knit/lab1/Task1.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/org/knit/lab1/Task2$SimpleUrl.class" afterDir="false" />
@@ -36,8 +34,6 @@
       <change afterPath="$PROJECT_DIR$/target/classes/org/knit/lab3/Warrior.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/org/knit/lab3/WarriorTank.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/project.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727516618038</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Completed lab 4 (task 7)">
+      <option name="closed" value="true" />
+      <created>1728121672487</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728121672487</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,6 +175,7 @@
     <MESSAGE value="Completed first lab" />
     <MESSAGE value="Completed task 3" />
     <MESSAGE value="Completed lab 3 (only task 6)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed lab 3 (only task 6)" />
+    <MESSAGE value="Completed lab 4 (task 7)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed lab 4 (task 7)" />
   </component>
 </project>
