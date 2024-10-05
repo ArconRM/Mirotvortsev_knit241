@@ -1,31 +1,52 @@
 package org.knit;
 
-import org.knit.lab3.Mage;
-import org.knit.lab3.PlayerFabric;
-import org.knit.lab3.Priest;
-import org.knit.lab3.WarriorTank;
+import org.knit.lab4.DictionaryStatistic;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        PlayerFabric fabric = new PlayerFabric();
+    public static void main(String[] args) throws FileNotFoundException {
+        Scanner scanner = new Scanner(new File("src/main/java/assets/dictionary.txt"));
+        int wordsCount = 0;
+        while (scanner.hasNext()) {
+            wordsCount++;
+            scanner.nextLine();
+        }
+//        System.out.println(wordsCount);
+        scanner.close();
 
-        WarriorTank warrior = fabric.createWarriorTank("Some Ork");
-        warrior.move(10, 10);
+        scanner = new Scanner(new File("src/main/java/assets/dictionary.txt"));
+        String[] words = new String[wordsCount];
+        int curWordsIndex = 0;
+        while (scanner.hasNext()) {
+            words[curWordsIndex] = scanner.nextLine().toLowerCase();
+            curWordsIndex++;
+        }
 
-        Mage mage = fabric.createMage("Some Mage");
-        mage.move(10, 20);
+//        for (String word : words) {
+//            System.out.println(word);
+//        }
+        scanner.close();
 
-        Priest priest = fabric.createPriest("Some Healer");
-        priest.move(10, 20);
+        int alphabetCount = 0;
+        for (int i = 'а'; i <= 'я'; i++) {
+            alphabetCount += 1;
+        }
 
-        warrior.attack(mage);
-        priest.heal(mage);
-        mage.castSpell(warrior);
-        mage.castSpell(warrior);
-        mage.castSpell(warrior);
-        mage.castSpell(warrior);
-        mage.castSpell(warrior);
+        char[] alphabet = new char[alphabetCount];
+        int curAlphabetIndex = 0;
+        for (int i = 'а'; i <= 'я'; i++) {
+            alphabet[curAlphabetIndex] = (char) i;
+            curAlphabetIndex++;
+        }
 
-        System.out.println(warrior);
+        DictionaryStatistic dictionaryStatistic = new DictionaryStatistic(words, alphabet);
+//        System.out.println(dictionaryStatistic.getMaxWordLength());
+//        System.out.println(dictionaryStatistic.getMinWordLength());
+//        dictionaryStatistic.printSymbolsStat();
+//        System.out.println(dictionaryStatistic.getRandomWord());
+        dictionaryStatistic.game("библиотека");
     }
 }
