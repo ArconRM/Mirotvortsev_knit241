@@ -90,7 +90,7 @@ public class DictionaryStatistic {
                 continue;
 
             for (char letterToCheck : wordToCheck.toCharArray()) {
-                if ((countLettersInCharArray(wordToCheck.toCharArray(), letterToCheck)) == 0 ||
+                if ((countLettersInCharArray(originalWord.toCharArray(), letterToCheck)) == 0 ||
                         countLettersInCharArray(wordToCheck.toCharArray(), letterToCheck) > countLettersInCharArray(originalWord.toCharArray(), letterToCheck)) {
                     isCorrect = false;
                     break;
