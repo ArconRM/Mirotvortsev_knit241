@@ -17,7 +17,7 @@ public class Main {
 
     private static void Task9() throws FileNotFoundException {
         TypingSpeedApp app = new TypingSpeedApp();
-        app.start("assets/dictionary.txt");
+        app.start("src/main/java/assets/dictionary.txt");
     }
 
 //    private static void Task8() {
