@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e6db69c-dfbd-48b0-b034-382513556b3d" name="Changes" comment="In process">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab6/HangmanGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab6/StudentsManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab5/TypingSpeedApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab5/TypingSpeedApp.java" afterDir="false" />
+    <list default="true" id="1e6db69c-dfbd-48b0-b034-382513556b3d" name="Changes" comment="Completed lab 6">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab6/StudentsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab6/StudentsManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,12 +35,12 @@
     &quot;assignee&quot;: &quot;ArconRM&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/ArconRM/Mirotvortsev_knit241.git&quot;,
-    &quot;accountId&quot;: &quot;e3658530-08d0-41c2-ae39-c316de3f8a18&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ArconRM/Mirotvortsev_knit241.git",
+    "accountId": "eb44e625-21d8-41bd-9d2e-7c5da3f83063"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
 &quot;associatedIndex&quot;: 3
 }</component>
@@ -144,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728726079730</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Completed lab 6">
+      <option name="closed" value="true" />
+      <created>1729934298854</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1729934298854</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -164,6 +168,7 @@
     <MESSAGE value="Completed lab 3 (only task 6)" />
     <MESSAGE value="Completed lab 4 (task 7)" />
     <MESSAGE value="In process" />
-    <option name="LAST_COMMIT_MESSAGE" value="In process" />
+    <MESSAGE value="Completed lab 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed lab 6" />
   </component>
 </project>

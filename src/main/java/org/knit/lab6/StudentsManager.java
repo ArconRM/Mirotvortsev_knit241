@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.TreeSet;
 
 public class StudentsManager {
-    private TreeSet<String> students = new TreeSet<>();
+    private final TreeSet<String> students = new TreeSet<>();
 
     public void start() {
         Scanner scanner = new Scanner(System.in);
@@ -54,7 +54,7 @@ public class StudentsManager {
                         } else if (!students.contains(secondStudent)) {
                             System.out.println("Второго студента в списке нет.");
                         } else {
-                            System.out.println(String.join("", students.subSet(firstStudent, secondStudent)));
+                            System.out.println(String.join("\n", students.subSet(firstStudent, secondStudent)));
                         }
 
                     } else {
