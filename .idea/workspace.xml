@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e6db69c-dfbd-48b0-b034-382513556b3d" name="Changes" comment="Completed lab 4 (task 7)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab5/ShopItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab5/ShopItemGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab5/ShopItemNameComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab5/ShopItemPriceComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab5/TypingSpeedApp.java" afterDir="false" />
+    <list default="true" id="1e6db69c-dfbd-48b0-b034-382513556b3d" name="Changes" comment="In process">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab6/HangmanGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab6/StudentsManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab4/DictionaryStatistic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab4/DictionaryStatistic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab5/TypingSpeedApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab5/TypingSpeedApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,16 +54,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/artemiymirotvortsev/IdeaProjects/knit241_template-master/src/main/java/assets&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/artemiymirotvortsev/IdeaProjects/knit241_template-master/src/main/java/assets",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "configurable.group.appearance"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/assets" />
@@ -136,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728121672487</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="In process">
+      <option name="closed" value="true" />
+      <created>1728726079730</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728726079730</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -155,6 +163,7 @@
     <MESSAGE value="Completed task 3" />
     <MESSAGE value="Completed lab 3 (only task 6)" />
     <MESSAGE value="Completed lab 4 (task 7)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed lab 4 (task 7)" />
+    <MESSAGE value="In process" />
+    <option name="LAST_COMMIT_MESSAGE" value="In process" />
   </component>
 </project>

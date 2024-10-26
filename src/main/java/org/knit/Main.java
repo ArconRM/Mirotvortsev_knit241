@@ -1,23 +1,37 @@
 package org.knit;
 
 import org.knit.lab5.*;
+import org.knit.lab6.HangmanGame;
+import org.knit.lab6.StudentsManager;
 
-import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        try {
-            Task9();
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
+//        try {
+//            Task9();
+//            Task10();
+//        } catch (FileNotFoundException e) {
+//            throw new RuntimeException(e);
+//        }
+
+        Task11();
     }
 
     private static void Task9() throws FileNotFoundException {
         TypingSpeedApp app = new TypingSpeedApp();
         app.start("src/main/java/assets/dictionary.txt");
+    }
+
+    private static void Task10() throws FileNotFoundException {
+        HangmanGame app = new HangmanGame();
+        app.start("src/main/java/assets/dictionary.txt");
+    }
+
+    private static void Task11() {
+        StudentsManager studentsManager = new StudentsManager();
+        studentsManager.start();
+
     }
 
 //    private static void Task8() {

@@ -11,7 +11,7 @@ public class TypingSpeedApp {
     public void start(String wordsPath) throws FileNotFoundException {
         Scanner scanner = new Scanner(System.in);
         List<String> dictWords = getWords(wordsPath);
-        List<String> inputttedWords = new ArrayList<>();
+        List<String> inputtedWords = new ArrayList<>();
         int randomWordsCount = 0;
         long startTimeMillis = System.currentTimeMillis();
 
@@ -24,8 +24,12 @@ public class TypingSpeedApp {
             System.out.println("Слово: " + randomWord);
             String inputtedWord = scanner.nextLine();
             if (inputtedWord.equals(randomWord)) {
-                inputttedWords.add(inputtedWord);
-                System.out.println("Счет (+1): " + inputttedWords.size());
+                if (System.currentTimeMillis() - startTimeMillis >= 60_000) {
+                    System.out.println("Введенное слово не засчитано, так как время вышло");
+                } else {
+                    inputtedWords.add(inputtedWord);
+                    System.out.println("Счет (+1): " + inputtedWords.size());
+                }
             } else {
                 System.out.println("Ошибочный ввод");
             }
@@ -39,15 +43,15 @@ public class TypingSpeedApp {
         );
         System.out.println(
                 "Итоговый счет: " +
-                        inputttedWords.size()
+                        inputtedWords.size()
         );
         System.out.println(
                 "Количество введенных символов: " +
-                        String.join("", inputttedWords).length()
+                        String.join("", inputtedWords).length()
         );
         System.out.println(
                 "Скорость печати: " +
-                         String.join("", inputttedWords).length() / 60 +
+                         String.join("", inputtedWords).length() / 60 +
                         " симв/сек"
         );
     }
