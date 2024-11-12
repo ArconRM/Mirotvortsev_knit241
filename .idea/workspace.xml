@@ -5,12 +5,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e6db69c-dfbd-48b0-b034-382513556b3d" name="Changes" comment="Completed lab 6">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab6/StudentsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab6/StudentsManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/assets/folder2/subfolder/text10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/assets/folder3/notTxt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/assets/folder3/subfolder1/anotherText10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/assets/folder3/subfolder1/subsubfolder/deepText20.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/assets/folder3/text5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab7/CounterFileVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab7/FileTreeWalker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/knit/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/knit/lab1/Task1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/knit/lab1/Task2$SimpleUrl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/knit/lab1/Task2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/knit/lab2/Task3$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/knit/lab2/Task3$Calculator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/knit/lab2/Task3$DivisionByZeroException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/knit/lab2/Task3$Operations.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/knit/lab2/Task3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/knit/lab2/Task4$Container.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/knit/lab2/Task4$Cube.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/knit/lab2/Task4$Cylinder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/knit/lab2/Task4$Shape.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/knit/lab2/Task4$Sphere.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/knit/lab2/Task4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/knit/lab2/task5/File.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/knit/lab2/task5/FileSystemComponent.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/knit/lab2/task5/Folder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/knit/lab2/task5/Task5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/knit/lab3/Attacker.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/knit/lab3/Healer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/knit/lab3/Mage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/knit/lab3/Player.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/knit/lab3/PlayerFabric.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/knit/lab3/Priest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/knit/lab3/SpellCaster.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/knit/lab3/Warrior.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/knit/lab3/WarriorTank.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="module" />
+    </option>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -35,12 +78,12 @@
     &quot;assignee&quot;: &quot;ArconRM&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ArconRM/Mirotvortsev_knit241.git",
-    "accountId": "eb44e625-21d8-41bd-9d2e-7c5da3f83063"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ArconRM/Mirotvortsev_knit241.git&quot;,
+    &quot;accountId&quot;: &quot;e3658530-08d0-41c2-ae39-c316de3f8a18&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
 &quot;associatedIndex&quot;: 3
 }</component>
@@ -52,7 +95,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Run",
+    "Application.Main.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
@@ -170,5 +213,16 @@
     <MESSAGE value="In process" />
     <MESSAGE value="Completed lab 6" />
     <option name="LAST_COMMIT_MESSAGE" value="Completed lab 6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/knit/lab7/CounterFileVisitor.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

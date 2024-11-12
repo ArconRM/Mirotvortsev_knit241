@@ -1,60 +1,17 @@
 package org.knit;
 
-import org.knit.lab5.*;
-import org.knit.lab6.HangmanGame;
-import org.knit.lab6.StudentsManager;
-
-import java.io.FileNotFoundException;
+import org.knit.lab7.FileTreeWalker;
 
 public class Main {
     public static void main(String[] args) {
-//        try {
-//            Task9();
-//            Task10();
-//        } catch (FileNotFoundException e) {
-//            throw new RuntimeException(e);
-//        }
-
-        Task11();
+        Task12();
     }
 
-    private static void Task9() throws FileNotFoundException {
-        TypingSpeedApp app = new TypingSpeedApp();
-        app.start("src/main/java/assets/dictionary.txt");
+    private static void Task12() {
+        FileTreeWalker fileTreeWalker = new FileTreeWalker("src/main/java/assets");
+        fileTreeWalker.walkFileTreeAndCountWordsInTxts();
     }
 
-    private static void Task10() throws FileNotFoundException {
-        HangmanGame app = new HangmanGame();
-        app.start("src/main/java/assets/dictionary.txt");
-    }
-
-    private static void Task11() {
-        StudentsManager studentsManager = new StudentsManager();
-        studentsManager.start();
-
-    }
-
-//    private static void Task8() {
-//        ShopItemGenerator generator = new ShopItemGenerator();
-//        ShopItem[] shopItems = generator.generateShopItems(100);
-//
-//        System.out.println("По наименованию");
-////        Arrays.sort(shopItems, new ShopItemNameComparator());
-//        Arrays.sort(shopItems, Comparator.comparing(ShopItem::getName).thenComparing(ShopItem::getPrice));
-//
-//        for (ShopItem item : shopItems) {
-//            System.out.println(item);
-//        }
-
-//        System.out.println("\nПо цене");
-//        Arrays.sort(shopItems, new ShopItemPriceComparator());
-//
-//        for (ShopItem item : shopItems) {
-//            System.out.println(item);
-//        }
-
-//        countEqual(shopItems);
-//    }
 
 //    private static void Task7() {
 //        Scanner scanner = new Scanner(new File("src/main/java/assets/dictionary.txt"));
