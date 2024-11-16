@@ -1,10 +1,24 @@
 package org.knit;
 
+import org.knit.additional.EventAnalyser;
 import org.knit.lab7.FileTreeWalker;
+import org.knit.lab8.UserManager;
 
 public class Main {
     public static void main(String[] args) {
-        Task12();
+//        Task12();
+//        Task13();
+        AdditionalTask1();
+    }
+
+    private static void AdditionalTask1() {
+        EventAnalyser eventAnalyser = new EventAnalyser();
+        eventAnalyser.start();
+    }
+
+    private static void Task13() {
+        UserManager userManager = new UserManager();
+        userManager.start();
     }
 
     private static void Task12() {
