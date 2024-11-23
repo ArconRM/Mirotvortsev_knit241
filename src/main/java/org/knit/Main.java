@@ -3,27 +3,53 @@ package org.knit;
 import org.knit.additional.EventAnalyser;
 import org.knit.lab7.FileTreeWalker;
 import org.knit.lab8.UserManager;
+import org.knit.lab9.*;
+
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-//        Task12();
-//        Task13();
-        AdditionalTask1();
+//        Task14();
+//        Task15();
+//        Task16();
+        Task17();
     }
 
-    private static void AdditionalTask1() {
-        EventAnalyser eventAnalyser = new EventAnalyser();
-        eventAnalyser.start();
+    private static void Task14() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите текущий сигнал светофора (RED, YELLOW, GREEN): ");
+        TrafficLight inputtedLight = null;
+        while (inputtedLight == null) {
+            try {
+                inputtedLight = TrafficLight.valueOf(scanner.nextLine());
+                System.out.println("Следующий сигнал: " + inputtedLight.getNext());
+            } catch (Exception e) {
+                System.out.println("Некорректный ввод, давай еще раз.");
+            }
+        }
     }
 
-    private static void Task13() {
-        UserManager userManager = new UserManager();
-        userManager.start();
+    private static void Task15() {
+        for (var season : Seasons.values()) {
+            System.out.println(season.getInfo());
+        }
     }
 
-    private static void Task12() {
-        FileTreeWalker fileTreeWalker = new FileTreeWalker("src/main/java/assets");
-        fileTreeWalker.walkFileTreeAndCountWordsInTxts();
+    private static void Task16() {
+        for (var suit : Suit.values()) {
+            for (var rank: Rank.values()) {
+                System.out.println(rank.getName() + " " + suit.getName());
+            }
+        }
+    }
+
+    private static void Task17() {
+        User user = new User(null, "Очень некорректный username", 16);
+        try {
+            Validator.validate(user);
+        } catch (IllegalAccessException e) {
+            System.out.println("Выкинулось " + e);
+        }
     }
 
 
