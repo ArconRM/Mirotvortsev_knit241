@@ -1,78 +1,83 @@
 package org.knit;
 
-import org.knit.additional.EventAnalyser;
-import org.knit.lab10.Box;
-import org.knit.lab10.Dictionary;
-import org.knit.lab10.Pair;
-import org.knit.lab10.UniversalUtilities;
-import org.knit.lab7.FileTreeWalker;
-import org.knit.lab8.UserManager;
-import org.knit.lab9.*;
+import org.knit.lab11.*;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
-
-import static org.knit.lab10.UniversalUtilities.*;
+import java.sql.*;
 
 public class Main {
     public static void main(String[] args) {
-//        Task18();
-//        Task19();
-//        Task20();
-//        Task21();
-//        Task22();
-        Task23();
+        Task25();
     }
 
-    private static void Task18() {
-        Pair<String, Integer> pair = new Pair<>("Age", 30);
-        System.out.println(pair.getFirst()); // Age
-        System.out.println(pair.getSecond()); // 30
-        pair.setSecond(35);
-        System.out.println(pair.getSecond()); // 35
+    private static void Task25() {
+        try (Connection conn = DbConnection.getConnection()) {
+            FileDAO fileDAO = new FileDAOImpl(conn);
+            FileApp fileApp = new FileApp(fileDAO);
+            fileApp.start();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
-    private static void Task19() {
-        Integer[] numbers = {1, 2, 3, 4, 5};
-        findMax(numbers).ifPresent(System.out::println);
-
-        String[] words = {"apple", "banana", "cherry"};
-        findMax(words).ifPresent(System.out::println);
+    private static void Task24() {
+        try (Connection conn = DbConnection.getConnection()) {
+            UserDAO userDAO = new UserDAOImpl(conn);
+            UserService userService = new UserServiceImpl(userDAO);
+            UserManager userManager = new UserManager(userService);
+            userManager.start();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
-    private static void Task20() {
-        Box<Integer> integerBox = new Box<>();
-        integerBox.add(10);
-        integerBox.add(20);
-        System.out.println(integerBox.sum()); // 30
-
-        Box<Double> doubleBox = new Box<>();
-        doubleBox.add(1.5);
-        doubleBox.add(2.5);
-        System.out.println(doubleBox.sum()); // 4.0
-    }
-
-    private static void Task21() {
-        List<String> words = Arrays.asList("apple", "banana", "cherry");
-        List<String> filtered = filter(words, s -> s.startsWith("b"));
-        System.out.println(filtered); // [banana]
-    }
-
-    private static void Task22() {
-        Dictionary<String, Integer> dictionary = new Dictionary<>();
-        dictionary.put("Alice", 25);
-        System.out.println(dictionary.get("Alice")); // 25
-        dictionary.put("Alice", 30);
-        System.out.println(dictionary.get("Alice")); // 30
-        dictionary.remove("йцукен");
-        System.out.println(dictionary.get("йцукен")); // :(
-    }
-
-    private static void Task23() {
-        printType(123); // java.lang.Integer
-        printType("Hello"); // java.lang.String
-    }
+//    private static void Task18() {
+//        Pair<String, Integer> pair = new Pair<>("Age", 30);
+//        System.out.println(pair.getFirst()); // Age
+//        System.out.println(pair.getSecond()); // 30
+//        pair.setSecond(35);
+//        System.out.println(pair.getSecond()); // 35
+//    }
+//
+//    private static void Task19() {
+//        Integer[] numbers = {1, 2, 3, 4, 5};
+//        findMax(numbers).ifPresent(System.out::println);
+//
+//        String[] words = {"apple", "banana", "cherry"};
+//        findMax(words).ifPresent(System.out::println);
+//    }
+//
+//    private static void Task20() {
+//        Box<Integer> integerBox = new Box<>();
+//        integerBox.add(10);
+//        integerBox.add(20);
+//        System.out.println(integerBox.sum()); // 30
+//
+//        Box<Double> doubleBox = new Box<>();
+//        doubleBox.add(1.5);
+//        doubleBox.add(2.5);
+//        System.out.println(doubleBox.sum()); // 4.0
+//    }
+//
+//    private static void Task21() {
+//        List<String> words = Arrays.asList("apple", "banana", "cherry");
+//        List<String> filtered = filter(words, s -> s.startsWith("b"));
+//        System.out.println(filtered); // [banana]
+//    }
+//
+//    private static void Task22() {
+//        Dictionary<String, Integer> dictionary = new Dictionary<>();
+//        dictionary.put("Alice", 25);
+//        System.out.println(dictionary.get("Alice")); // 25
+//        dictionary.put("Alice", 30);
+//        System.out.println(dictionary.get("Alice")); // 30
+//        dictionary.remove("йцукен");
+//        System.out.println(dictionary.get("йцукен")); // :(
+//    }
+//
+//    private static void Task23() {
+//        printType(123); // java.lang.Integer
+//        printType("Hello"); // java.lang.String
+//    }
 
 //    private static void Task14() {
 //        Scanner scanner = new Scanner(System.in);

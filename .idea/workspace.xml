@@ -4,17 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e6db69c-dfbd-48b0-b034-382513556b3d" name="Changes" comment="Completed lab 7 + additional">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab9/Rank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab9/Retentions/MaxLength.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab9/Retentions/Min.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab9/Retentions/NotNull.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab9/Seasons.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab9/Suit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab9/TrafficLight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab9/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab9/Validator.java" afterDir="false" />
+    <list default="true" id="1e6db69c-dfbd-48b0-b034-382513556b3d" name="Changes" comment="Completed lab 9">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab11/DbConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab11/FileApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab11/FileDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab11/FileDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab11/FileProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab11/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab11/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab11/UserDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab11/UserManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab11/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/lab11/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,9 +34,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
         <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -53,12 +56,12 @@
     &quot;assignee&quot;: &quot;ArconRM&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ArconRM/Mirotvortsev_knit241.git",
-    "accountId": "eb44e625-21d8-41bd-9d2e-7c5da3f83063"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ArconRM/Mirotvortsev_knit241.git&quot;,
+    &quot;accountId&quot;: &quot;eb44e625-21d8-41bd-9d2e-7c5da3f83063&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
 &quot;associatedIndex&quot;: 3
 }</component>
@@ -68,20 +71,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/artemiymirotvortsev/IdeaProjects/knit241_template-master/src/main/java/assets",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "configurable.group.appearance"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/artemiymirotvortsev/IdeaProjects/knit241_template-master/src/main/java/assets&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/assets" />
@@ -175,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731742321064</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Completed lab 9">
+      <option name="closed" value="true" />
+      <created>1732347401533</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1732347401533</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,6 +208,7 @@
     <MESSAGE value="In process" />
     <MESSAGE value="Completed lab 6" />
     <MESSAGE value="Completed lab 7 + additional" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed lab 7 + additional" />
+    <MESSAGE value="Completed lab 9" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed lab 9" />
   </component>
 </project>
