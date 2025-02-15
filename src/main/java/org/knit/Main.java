@@ -1,34 +1,81 @@
 package org.knit;
 
-import org.knit.lab11.*;
+import org.knit.semestr1.lab11.*;
+import org.knit.semestr2.lab1.task1.*;
+import org.knit.semestr2.lab1.task2.*;
+import org.knit.semestr2.lab1.task3.TransportFactory;
 
 import java.sql.*;
 
 public class Main {
     public static void main(String[] args) {
-        Task25();
+//        Task1();
+//        Task2();
+//        Task3();
     }
 
-    private static void Task25() {
-        try (Connection conn = DbConnection.getConnection()) {
-            FileDAO fileDAO = new FileDAOImpl(conn);
-            FileApp fileApp = new FileApp(fileDAO);
-            fileApp.start();
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
+    public static void Task3() {
+        TransportFactory transportFactory = new TransportFactory();
+        System.out.println(transportFactory.makeTransport("business").getSpecifications());
+        System.out.println(transportFactory.makeTransport("family").getSpecifications());
+        System.out.println(transportFactory.makeTransport("delivery").getSpecifications());
     }
 
-    private static void Task24() {
-        try (Connection conn = DbConnection.getConnection()) {
-            UserDAO userDAO = new UserDAOImpl(conn);
-            UserService userService = new UserServiceImpl(userDAO);
-            UserManager userManager = new UserManager(userService);
-            userManager.start();
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
+    private static void Task2() {
+        Coffee coffee = new Espresso();
+        System.out.println(coffee.getDescription() + " | Цена: $" + coffee.getCost());
+
+        // Добавляем размер (medium)
+        coffee = new SizeDecorator(coffee, CoffeeSize.MEDIUM);
+        System.out.println(coffee.getDescription() + " | Цена: $" + coffee.getCost());
+
+        // Добавляем молоко
+        coffee = new Milk(coffee);
+        System.out.println(coffee.getDescription() + " | Цена: $" + coffee.getCost());
+
+        // Добавляем карамель
+        coffee = new Caramel(coffee);
+        System.out.println(coffee.getDescription() + " | Цена: $" + coffee.getCost());
+
+        // Добавляем шоколад
+        coffee = new Chocolate(coffee);
+        System.out.println(coffee.getDescription() + " | Цена: $" + coffee.getCost());
     }
+
+    private static void Task1() {
+        Handler callCenter = new CallCenter();
+        Handler manager = new Manager();
+        Handler legalDepartment = new LegalDepartment();
+
+        callCenter.setNextHandler(manager);
+        manager.setNextHandler(legalDepartment);
+
+        callCenter.processRequest(Difficulty.EASY);
+        callCenter.processRequest(Difficulty.MEDIUM);
+        callCenter.processRequest(Difficulty.HARD);
+        callCenter.processRequest(Difficulty.TOTALLY_FUCKED);
+    }
+
+//    private static void Task25() {
+//        try (Connection conn = DbConnection.getConnection()) {
+//            FileDAO fileDAO = new FileDAOImpl(conn);
+//            FileApp fileApp = new FileApp(fileDAO);
+//            fileApp.start();
+//        } catch (SQLException e) {
+//            throw new RuntimeException(e);
+//        }
+//    }
+//
+//    private static void Task24() {
+//        try (Connection conn = DbConnection.getConnection()) {
+//            UserDAO userDAO = new UserDAOImpl(conn);
+//            UserService userService = new UserServiceImpl(userDAO);
+//            UserManager userManager = new UserManager(userService);
+//            userManager.start();
+//        } catch (SQLException e) {
+//            throw new RuntimeException(e);
+//        }
+//    }
 
 //    private static void Task18() {
 //        Pair<String, Integer> pair = new Pair<>("Age", 30);
