@@ -1,60 +1,83 @@
 package org.knit;
 
-import org.knit.semestr1.lab11.*;
-import org.knit.semestr2.lab1.task1.*;
-import org.knit.semestr2.lab1.task2.*;
-import org.knit.semestr2.lab1.task3.TransportFactory;
+import org.knit.semestr2.lab2.*;
 
-import java.sql.*;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.LinkedBlockingQueue;
+
+/*2.9 Задача «Конвейер сборки деталей»
+
+Описание задачи
+
+На заводе работают три типа рабочих, каждый из которых выполняет свою часть работы в конвейерном режиме:
+
+Штамповщик – вырезает заготовку (создает объект детали).
+Сборщик – собирает из заготовки готовую деталь.
+Оператор контроля качества – проверяет деталь и отправляет на склад.
+Каждый рабочий – отдельный поток, и они должны работать последовательно, используя общую очередь для передачи деталей.
+
+Требования к решению
+Использовать потоки (Thread или ExecutorService).
+Использовать синхронизацию (wait(), notify(), BlockingQueue).
+Реализовать конвейерную передачу данных между потоками.
+
+Подсказки к решению
+Использовать BlockingQueue для передачи деталей между рабочими.
+Штамповщик передает заготовку сборщику, а тот – оператору контроля.
+Потоки должны ждать, если предыдущий этап не завершен.
+
+Дополнительные идеи
+Добавить случайные задержки в работе потоков (Thread.sleep()) для имитации времени обработки.
+Ограничить размер склада (например, если на складе уже 5 деталей, оператор контроля ждет, пока не освободится место).
+Реализовать обработку брака – если деталь не соответствует стандарту, она отправляется на доработку.*/
 
 public class Main {
     public static void main(String[] args) {
-//        Task1();
-//        Task2();
-//        Task3();
-    }
+        Task2_9();
 
-    public static void Task3() {
-        TransportFactory transportFactory = new TransportFactory();
-        System.out.println(transportFactory.makeTransport("business").getSpecifications());
-        System.out.println(transportFactory.makeTransport("family").getSpecifications());
-        System.out.println(transportFactory.makeTransport("delivery").getSpecifications());
-    }
-
-    private static void Task2() {
-        Coffee coffee = new Espresso();
-        System.out.println(coffee.getDescription() + " | Цена: $" + coffee.getCost());
-
-        // Добавляем размер (medium)
-        coffee = new SizeDecorator(coffee, CoffeeSize.MEDIUM);
-        System.out.println(coffee.getDescription() + " | Цена: $" + coffee.getCost());
-
-        // Добавляем молоко
-        coffee = new Milk(coffee);
-        System.out.println(coffee.getDescription() + " | Цена: $" + coffee.getCost());
-
-        // Добавляем карамель
-        coffee = new Caramel(coffee);
-        System.out.println(coffee.getDescription() + " | Цена: $" + coffee.getCost());
-
-        // Добавляем шоколад
-        coffee = new Chocolate(coffee);
-        System.out.println(coffee.getDescription() + " | Цена: $" + coffee.getCost());
-    }
-
-    private static void Task1() {
-        Handler callCenter = new CallCenter();
-        Handler manager = new Manager();
-        Handler legalDepartment = new LegalDepartment();
-
-        callCenter.setNextHandler(manager);
-        manager.setNextHandler(legalDepartment);
-
-        callCenter.processRequest(Difficulty.EASY);
-        callCenter.processRequest(Difficulty.MEDIUM);
-        callCenter.processRequest(Difficulty.HARD);
-        callCenter.processRequest(Difficulty.TOTALLY_FUCKED);
-    }
+//    public static void Task3() {
+//        TransportFactory transportFactory = new TransportFactory();
+//        System.out.println(transportFactory.makeTransport("business").getSpecifications());
+//        System.out.println(transportFactory.makeTransport("family").getSpecifications());
+//        System.out.println(transportFactory.makeTransport("delivery").getSpecifications());
+//    }
+//
+//    private static void Task2() {
+//        Coffee coffee = new Espresso();
+//        System.out.println(coffee.getDescription() + " | Цена: $" + coffee.getCost());
+//
+//        // Добавляем размер (medium)
+//        coffee = new SizeDecorator(coffee, CoffeeSize.MEDIUM);
+//        System.out.println(coffee.getDescription() + " | Цена: $" + coffee.getCost());
+//
+//        // Добавляем молоко
+//        coffee = new Milk(coffee);
+//        System.out.println(coffee.getDescription() + " | Цена: $" + coffee.getCost());
+//
+//        // Добавляем карамель
+//        coffee = new Caramel(coffee);
+//        System.out.println(coffee.getDescription() + " | Цена: $" + coffee.getCost());
+//
+//        // Добавляем шоколад
+//        coffee = new Chocolate(coffee);
+//        System.out.println(coffee.getDescription() + " | Цена: $" + coffee.getCost());
+//    }
+//
+//    private static void Task1() {
+//        Handler callCenter = new CallCenter();
+//        Handler manager = new Manager();
+//        Handler legalDepartment = new LegalDepartment();
+//
+//        callCenter.setNextHandler(manager);
+//        manager.setNextHandler(legalDepartment);
+//
+//        callCenter.processRequest(Difficulty.EASY);
+//        callCenter.processRequest(Difficulty.MEDIUM);
+//        callCenter.processRequest(Difficulty.HARD);
+//        callCenter.processRequest(Difficulty.TOTALLY_FUCKED);
+//    }
 
 //    private static void Task25() {
 //        try (Connection conn = DbConnection.getConnection()) {
@@ -171,7 +194,7 @@ public class Main {
 //            wordsCount++;
 //            scanner.nextLine();
 //        }
-////        System.out.println(wordsCount);
+//        System.out.println(wordsCount);
 //        scanner.close();
 //
 //        scanner = new Scanner(new File("src/main/java/assets/dictionary.txt"));
@@ -182,9 +205,9 @@ public class Main {
 //            curWordsIndex++;
 //        }
 //
-////        for (String word : words) {
-////            System.out.println(word);
-////        }
+//        for (String word : words) {
+//            System.out.println(word);
+//        }
 //        scanner.close();
 //
 //        int alphabetCount = 0;
@@ -200,10 +223,10 @@ public class Main {
 //        }
 //
 //        DictionaryStatistic dictionaryStatistic = new DictionaryStatistic(words, alphabet);
-////        System.out.println(dictionaryStatistic.getMaxWordLength());
-////        System.out.println(dictionaryStatistic.getMinWordLength());
-////        dictionaryStatistic.printSymbolsStat();
-////        System.out.println(dictionaryStatistic.getRandomWord());
+//        System.out.println(dictionaryStatistic.getMaxWordLength());
+//        System.out.println(dictionaryStatistic.getMinWordLength());
+//        dictionaryStatistic.printSymbolsStat();
+//        System.out.println(dictionaryStatistic.getRandomWord());
 //        dictionaryStatistic.game("библиотека");
 //    }
 
@@ -222,6 +245,57 @@ public class Main {
 //
 //            System.out.println(shopItems[i].getPartNumber());
 //            System.out.println(itemsAndCount.get(shopItems[i].getPartNumber()));
-//        }
-//    }
+//        }fsdfsdfsdf
+    }
+
+    static void Task2_9() {
+        BlockingQueue<Detail> stampingQueue = new LinkedBlockingQueue<>();
+        BlockingQueue<Detail> assemblingQueue = new LinkedBlockingQueue<>();
+        BlockingQueue<Detail> warehouseQueue = new LinkedBlockingQueue<>();
+
+        ExecutorService executorService = Executors.newFixedThreadPool(3);
+        executorService.submit(new Stamper(stampingQueue));
+        executorService.submit(new Assembler(stampingQueue, assemblingQueue));
+        executorService.submit(new Operator(assemblingQueue, warehouseQueue));
+
+        executorService.shutdown();
+
+    }
+
+    static void Task2_5() {
+        Restaraunt restaraunt = new Restaraunt();
+        Thread threadCooker = new Thread(() -> {
+            for (int i = 0; i < 10; i++) {
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+                restaraunt.cook("Блюдо " + i);
+            }
+        });
+        Thread threadWaiter = new Thread(() -> {
+            for (int i = 0; i < 10; i++) {
+                restaraunt.serve();
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        threadCooker.start();
+        threadWaiter.start();
+    }
+
+    static void Task2_4() {
+        GasStation gasStation = new GasStation(2);
+        for (int i = 0; i < 10; i++) {
+            int finalI = i;
+            new Thread(() -> {
+                gasStation.Refuel(String.valueOf(finalI) + " машина");
+            }).start();
+        }
+    }
 }

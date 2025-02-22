@@ -4,83 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e6db69c-dfbd-48b0-b034-382513556b3d" name="Changes" comment="Completed lab 9">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab1/task1/CallCenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab1/task1/Difficulty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab1/task1/Handler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab1/task1/LegalDepartment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab1/task1/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab1/task2/Caramel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab1/task2/Chocolate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab1/task2/Coffee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab1/task2/CoffeeDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab1/task2/CoffeeSize.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab1/task2/Espresso.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab1/task2/Milk.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab1/task2/SizeDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab1/task3/BusinessCar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab1/task3/FamilyVan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab1/task3/Motorbike.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab1/task3/Transport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab1/task3/TransportFactory.java" afterDir="false" />
+    <list default="true" id="1e6db69c-dfbd-48b0-b034-382513556b3d" name="Changes" comment="Completed lab 1 in semestr 2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab2/Assembler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab2/Detail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab2/Factory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab2/GasStation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab2/Operator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab2/Restaraunt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab2/Stamper.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/org/knit/Main.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/project.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/additional/EventAnalyser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/additional/EventAnalyser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab1/Task1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab1/Task1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab1/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab1/Task2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab10/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab10/Box.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab10/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab10/Dictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab10/Pair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab10/Pair.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab10/UniversalUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab10/UniversalUtilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab11/DbConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab11/DbConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab11/FileApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab11/FileApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab11/FileDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab11/FileDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab11/FileDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab11/FileDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab11/FileProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab11/FileProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab11/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab11/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab11/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab11/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab11/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab11/UserDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab11/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab11/UserManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab11/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab11/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab11/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab11/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab2/Task3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab2/Task3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab2/Task4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab2/Task4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab2/task5/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab2/task5/File.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab2/task5/FileSystemComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab2/task5/FileSystemComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab2/task5/Folder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab2/task5/Folder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab2/task5/Task5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab2/task5/Task5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab3/Attacker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab3/Attacker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab3/Healer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab3/Healer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab3/Mage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab3/Mage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab3/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab3/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab3/PlayerFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab3/PlayerFabric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab3/Priest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab3/Priest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab3/SpellCaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab3/SpellCaster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab3/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab3/Warrior.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab3/WarriorTank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab3/WarriorTank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab4/DictionaryStatistic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab4/DictionaryStatistic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab5/ShopItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab5/ShopItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab5/ShopItemGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab5/ShopItemGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab5/ShopItemNameComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab5/ShopItemNameComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab5/ShopItemPriceComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab5/ShopItemPriceComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab5/TypingSpeedApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab5/TypingSpeedApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab6/HangmanGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab6/HangmanGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab6/StudentsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab6/StudentsManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab7/CounterFileVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab7/CounterFileVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab7/FileTreeWalker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab7/FileTreeWalker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab8/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab8/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab8/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab8/UserManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab9/Rank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab9/Rank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab9/Retentions/MaxLength.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab9/Retentions/MaxLength.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab9/Retentions/Min.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab9/Retentions/Min.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab9/Retentions/NotNull.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab9/Retentions/NotNull.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab9/Seasons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab9/Seasons.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab9/Suit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab9/Suit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab9/TrafficLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab9/TrafficLight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab9/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab9/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/lab9/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr1/lab9/Validator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,20 +68,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/artemiymirotvortsev/IdeaProjects/knit241_template-master/src/main/java/assets",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "configurable.group.appearance"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/artemiymirotvortsev/IdeaProjects/knit241_template-master/src/main/java/assets&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/assets" />
@@ -248,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732347401533</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Completed lab 1 in semestr 2">
+      <option name="closed" value="true" />
+      <created>1739604329672</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1739604329672</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -271,6 +214,7 @@
     <MESSAGE value="Completed lab 6" />
     <MESSAGE value="Completed lab 7 + additional" />
     <MESSAGE value="Completed lab 9" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed lab 9" />
+    <MESSAGE value="Completed lab 1 in semestr 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed lab 1 in semestr 2" />
   </component>
 </project>
