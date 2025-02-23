@@ -14,7 +14,7 @@ public class GasStation {
             System.out.println(carName + " ждет заправки");
             semaphore.acquire();
             Thread.sleep(2000);
-            System.out.println(carName + " заправился и уехал");
+            System.out.println(carName + " заправилась и уехала");
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         } finally {

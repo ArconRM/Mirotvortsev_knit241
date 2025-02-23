@@ -5,7 +5,7 @@ import java.util.Queue;
 
 public class Restaraunt {
     private final int CAPACITY = 3;
-    private Queue<String> mealsQueue = new LinkedList<>();
+    private final Queue<String> mealsQueue = new LinkedList<>();
 
     public synchronized void cook(String name) {
         while (mealsQueue.size() >= CAPACITY) {

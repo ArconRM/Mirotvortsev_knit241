@@ -7,35 +7,144 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
 
-/*2.9 Задача «Конвейер сборки деталей»
-
-Описание задачи
-
-На заводе работают три типа рабочих, каждый из которых выполняет свою часть работы в конвейерном режиме:
-
-Штамповщик – вырезает заготовку (создает объект детали).
-Сборщик – собирает из заготовки готовую деталь.
-Оператор контроля качества – проверяет деталь и отправляет на склад.
-Каждый рабочий – отдельный поток, и они должны работать последовательно, используя общую очередь для передачи деталей.
-
-Требования к решению
-Использовать потоки (Thread или ExecutorService).
-Использовать синхронизацию (wait(), notify(), BlockingQueue).
-Реализовать конвейерную передачу данных между потоками.
-
-Подсказки к решению
-Использовать BlockingQueue для передачи деталей между рабочими.
-Штамповщик передает заготовку сборщику, а тот – оператору контроля.
-Потоки должны ждать, если предыдущий этап не завершен.
-
-Дополнительные идеи
-Добавить случайные задержки в работе потоков (Thread.sleep()) для имитации времени обработки.
-Ограничить размер склада (например, если на складе уже 5 деталей, оператор контроля ждет, пока не освободится место).
-Реализовать обработку брака – если деталь не соответствует стандарту, она отправляется на доработку.*/
 
 public class Main {
     public static void main(String[] args) {
-        Task2_9();
+        Task2_8();
+    }
+
+    static void Task2_8() {
+        TrafficLight trafficLight = new TrafficLight();
+
+        Thread threadTrafficLight = new Thread(() -> {
+            while (true) {
+                trafficLight.changeColor();
+                try {
+                    Thread.sleep(5000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        Thread threadCar = new Thread(() -> {
+            for (int i = 1; i < 10; i++) {
+                Car car = new Car(String.valueOf(i));
+                car.pass(trafficLight);
+                try {
+                    Thread.sleep(900);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        threadTrafficLight.start();
+        threadCar.start();
+    }
+
+    static void Task2_7() {
+        Warehouse warehouse = new Warehouse();
+
+        Thread threadManufacturer = new Thread(() -> {
+            for (int i = 1; i <= 10; i++) {
+                warehouse.addProduct(String.valueOf(i));
+                try {
+                    Thread.sleep(200);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        Thread threadBuyer = new Thread(() -> {
+            for (int i = 1; i < 10; i++) {
+                warehouse.buyProduct();
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        threadManufacturer.start();
+        threadBuyer.start();
+    }
+
+    static void Task2_6() {
+        Railway railway = new Railway();
+
+        Thread threadCars = new Thread(() -> {
+            for (int i = 1; i <= 10; i++) {
+                try {
+                    Thread.sleep(450);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+                railway.passCar(i + " машина");
+            }
+        });
+
+        Thread threadTrain = new Thread(() -> {
+            try {
+                Thread.sleep(2000);
+                railway.trainIsPassing();
+                Thread.sleep(2000);
+                railway.trainPassed();
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        });
+
+        threadCars.start();
+        threadTrain.start();
+    }
+
+    static void Task2_9() {
+        Factory factory = new Factory();
+        factory.initProduction();
+    }
+
+    static void Task2_5() {
+        Restaraunt restaraunt = new Restaraunt();
+
+        Thread threadCooker = new Thread(() -> {
+            for (int i = 0; i < 10; i++) {
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+                restaraunt.cook("Блюдо " + i);
+            }
+        });
+
+        Thread threadWaiter = new Thread(() -> {
+            for (int i = 0; i < 10; i++) {
+                restaraunt.serve();
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        threadCooker.start();
+        threadWaiter.start();
+    }
+
+    static void Task2_4() {
+        GasStation gasStation = new GasStation(2);
+        for (int i = 0; i < 10; i++) {
+            int finalI = i;
+            new Thread(() -> {
+                gasStation.Refuel(String.valueOf(finalI) + " машина");
+            }).start();
+        }
+    }
+}
 
 //    public static void Task3() {
 //        TransportFactory transportFactory = new TransportFactory();
@@ -246,56 +355,3 @@ public class Main {
 //            System.out.println(shopItems[i].getPartNumber());
 //            System.out.println(itemsAndCount.get(shopItems[i].getPartNumber()));
 //        }fsdfsdfsdf
-    }
-
-    static void Task2_9() {
-        BlockingQueue<Detail> stampingQueue = new LinkedBlockingQueue<>();
-        BlockingQueue<Detail> assemblingQueue = new LinkedBlockingQueue<>();
-        BlockingQueue<Detail> warehouseQueue = new LinkedBlockingQueue<>();
-
-        ExecutorService executorService = Executors.newFixedThreadPool(3);
-        executorService.submit(new Stamper(stampingQueue));
-        executorService.submit(new Assembler(stampingQueue, assemblingQueue));
-        executorService.submit(new Operator(assemblingQueue, warehouseQueue));
-
-        executorService.shutdown();
-
-    }
-
-    static void Task2_5() {
-        Restaraunt restaraunt = new Restaraunt();
-        Thread threadCooker = new Thread(() -> {
-            for (int i = 0; i < 10; i++) {
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    throw new RuntimeException(e);
-                }
-                restaraunt.cook("Блюдо " + i);
-            }
-        });
-        Thread threadWaiter = new Thread(() -> {
-            for (int i = 0; i < 10; i++) {
-                restaraunt.serve();
-                try {
-                    Thread.sleep(2000);
-                } catch (InterruptedException e) {
-                    throw new RuntimeException(e);
-                }
-            }
-        });
-
-        threadCooker.start();
-        threadWaiter.start();
-    }
-
-    static void Task2_4() {
-        GasStation gasStation = new GasStation(2);
-        for (int i = 0; i < 10; i++) {
-            int finalI = i;
-            new Thread(() -> {
-                gasStation.Refuel(String.valueOf(finalI) + " машина");
-            }).start();
-        }
-    }
-}

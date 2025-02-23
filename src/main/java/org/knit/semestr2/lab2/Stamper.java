@@ -12,14 +12,15 @@ public class Stamper implements Runnable {
 
     @Override
     public void run() {
-        while (lastDetailId < 10) {
+        while (lastDetailId < 3) {
             try {
                 stampingQueue.put(new Detail(++lastDetailId));
-                System.out.println("Сделал заготовку " + lastDetailId);
+                System.out.println("Штамповщик сделал заготовку " + lastDetailId);
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
         }
+        System.out.println("Штамповщик ушел домой.");
     }
 }
