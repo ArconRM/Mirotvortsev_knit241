@@ -4,21 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e6db69c-dfbd-48b0-b034-382513556b3d" name="Changes" comment="lab 2 in process">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab2/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab2/Railway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab2/TrafficLight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab2/Warehouse.java" afterDir="false" />
+    <list default="true" id="1e6db69c-dfbd-48b0-b034-382513556b3d" name="Changes" comment="Completed lab 2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/MySingletonService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab2/Runner.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/org/knit/Main.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/project.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab2/Assembler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab2/Assembler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab2/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab2/Factory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab2/GasStation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab2/GasStation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab2/Operator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab2/Operator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab2/Restaraunt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab2/Restaraunt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab2/Stamper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab2/Stamper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab2/Railway.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/knit/semestr2/lab2/Railway.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740216985245</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Completed lab 2">
+      <option name="closed" value="true" />
+      <created>1740324518215</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1740324518215</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -227,6 +229,7 @@
     <MESSAGE value="Completed lab 9" />
     <MESSAGE value="Completed lab 1 in semestr 2" />
     <MESSAGE value="lab 2 in process" />
-    <option name="LAST_COMMIT_MESSAGE" value="lab 2 in process" />
+    <MESSAGE value="Completed lab 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed lab 2" />
   </component>
 </project>

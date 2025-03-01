@@ -1,7 +1,7 @@
 package org.knit.semestr2.lab2;
 
 public class Railway {
-    private boolean isClosed = false;
+    private volatile boolean isClosed = false;
 
     public synchronized void trainIsPassing() {
         System.out.println("Поезд приближается, шлагбаум закрывается.");

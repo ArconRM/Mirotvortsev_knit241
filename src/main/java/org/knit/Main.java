@@ -2,15 +2,61 @@ package org.knit;
 
 import org.knit.semestr2.lab2.*;
 
-import java.util.concurrent.BlockingQueue;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.BrokenBarrierException;
+import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.LinkedBlockingQueue;
-
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class Main {
     public static void main(String[] args) {
-        Task2_8();
+//        Task2_6();
+//        Task2_7();
+//        Task2_8();
+//        Task2_9();
+        Task2_10();
+    }
+
+    static void Task2_10() {
+        final int COUNT_OF_RUNNERS = 10;
+        CyclicBarrier barrier = new CyclicBarrier(COUNT_OF_RUNNERS);
+        AtomicBoolean allAlive = new AtomicBoolean(true);
+        ExecutorService executor = Executors.newFixedThreadPool(COUNT_OF_RUNNERS);
+
+        List<Runner> runners = new ArrayList<>(COUNT_OF_RUNNERS);
+        for (int i = 0; i < COUNT_OF_RUNNERS; i++) {
+            runners.add(new Runner(allAlive, barrier, i));
+        }
+
+        for (int i = 0; i < COUNT_OF_RUNNERS; i++) {
+            executor.submit(runners.get(i)::prepareForStart);
+        }
+        try {
+            barrier.await();
+            System.out.println("Все приготовились, гонка началась");
+        } catch (InterruptedException | BrokenBarrierException e) {
+            throw new RuntimeException(e);
+        }
+
+        for (int i = 0; i < COUNT_OF_RUNNERS; i++) {
+            executor.submit(runners.get(i)::run);
+        }
+        try {
+            barrier.await();
+            if (allAlive.get()) {
+                System.out.println("Все добежали, гонка закончилась");
+            } else {
+                System.out.println("Гонка закончилась из-за травмы бегуна");
+                executor.shutdown();
+            }
+        } catch (InterruptedException | BrokenBarrierException e) {
+//            System.out.println("Гонка закончилась из-за травмы бегуна");
+//            executor.shutdownNow();
+        }
+
+        executor.shutdownNow();
     }
 
     static void Task2_8() {
@@ -76,9 +122,9 @@ public class Main {
         Railway railway = new Railway();
 
         Thread threadCars = new Thread(() -> {
-            for (int i = 1; i <= 10; i++) {
+            for (int i = 1; i <= 1000; i++) {
                 try {
-                    Thread.sleep(450);
+                    Thread.sleep(50);
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 }

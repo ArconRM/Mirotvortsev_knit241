@@ -41,7 +41,7 @@ public class Operator implements Runnable {
                     }
                 } else {
                     reassemblingQueue.put(detail);
-                    System.out.println("Проверил деталь " + detail.getId() + " и отправил ее на доработку");
+                    System.out.println("Оператор проверил деталь " + detail.getId() + " и отправил ее на доработку");
                 }
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
